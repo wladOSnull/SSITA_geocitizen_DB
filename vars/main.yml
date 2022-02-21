@@ -1,0 +1,12 @@
+---
+# vars file for SSITA_geocitizen_DB
+
+ansible_ssh_private_key_file: ~/.aws/ssh_centos/id_rsa
+
+db_name: ss_demo_1
+db_user: geocitizen
+db_password: weakpass
+
+#db_root_user: centos
+
+...
