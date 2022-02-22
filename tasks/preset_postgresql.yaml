@@ -6,7 +6,7 @@
 
 - name: "initialize PostgreSQL"
   become: yes
-  shell: "postgresql-setup initdb"
+  command: "postgresql-setup initdb"
   when: not postgres_data.stat.exists
 
 - name: "start and enable PostreSQL service"
