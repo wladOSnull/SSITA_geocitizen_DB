@@ -19,3 +19,8 @@
   yum:
     name: postgresql-server.x86_64
     state: present
+
+- name: set private IP to variable
+  set_stats:
+    data:
+      DB_addr: "{{ host_private }}"
